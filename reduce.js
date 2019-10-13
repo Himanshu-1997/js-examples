@@ -1,7 +1,7 @@
 Array.prototype.reduce = function(fn, initial) {
   if (!this.length) return initial;
   let last = initial;
-  if (initial!==undefined ||initial!=null) {
+  if (initial!==undefined ||initial!==null) {
     for (let i = 0; i < this.length; i++) {
       last = fn(last, this[i]);
     }
